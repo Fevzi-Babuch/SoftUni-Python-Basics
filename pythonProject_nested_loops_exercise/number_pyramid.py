@@ -1,0 +1,19 @@
+# 1. Пирамида от числа
+# Напишете програма, която чете цяло число n, въведено от потребителя, и отпечатва пирамида от числа като в примерите:
+
+number = int(input())
+number_counter = 1
+col_counter = 1
+while number_counter <= number:
+    for _ in range(col_counter):
+        print(number_counter, end=" ")
+        number_counter += 1
+        if number_counter > number:
+            break
+    print()
+    col_counter += 1
+
+
+
+
+
